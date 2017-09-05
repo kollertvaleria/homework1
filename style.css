@@ -1,0 +1,18 @@
+.Photo {
+    display: inline-block;
+    position: relative;
+}
+.Photo:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    z-index: 1;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    padding: 24px 24px;
+}
